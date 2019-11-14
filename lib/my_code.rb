@@ -40,7 +40,7 @@ def reduce_to_any_true(source_array)
   index = 0
   while index < source_array do
     if source_array[index] == 'true'
-      return false
+      return true
     end
     index += 1
   end
