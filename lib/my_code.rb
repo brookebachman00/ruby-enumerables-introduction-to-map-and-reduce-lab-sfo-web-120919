@@ -40,7 +40,7 @@ end
 def reduce_to_total(source_array, starting_point)
   total = starting_point
   index = 0
-  while index < source_array.length do
+  while index < source_array.length
     total += source_array[index]
     index += 1
   end
@@ -48,9 +48,8 @@ def reduce_to_total(source_array, starting_point)
 end
 
 def reduce_to_all_true(source_array)
-  binding.pry
   index = 0
-  while index < source_array.length do
+  while index < source_array.length
     if source_array[index] == 'false'
       return false
     end
@@ -62,7 +61,7 @@ end
 
 def reduce_to_any_true(source_array)
   index = 0
-  while index < source_array.length do
+  while index < source_array.length
     if source_array[index] == 'true'
       return true
     end
