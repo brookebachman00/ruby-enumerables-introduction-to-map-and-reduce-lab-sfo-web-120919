@@ -6,19 +6,33 @@ def map_to_no_change(source_array)
   index = 0
   new_array = []
   while index < source_array do
-    new_array.push(source_array[index] * -1)
+    new_array.push(source_array[index] * 1)
     index += 1
   end
   return new_array
 end
 
 def map_to_double(source_array)
-  source_array.map {|i| i * 2}
+  index = 0
+  new_array = []
+  while index < source_array do
+    new_array.push(source_array[index] * 2)
+    index += 1
+  end
+  return new_array
+end
 end
 
 def map_to_square(source_array)
-  source_array.map {|i| i * i}
+  index = 0
+  new_array = []
+  while index < source_array do
+    new_array.push(source_array[index] * index)
+    index += 1
+  end
+  return new_array
 end
+
 
 # My Code here....
 def reduce_to_total(source_array, starting_point)
