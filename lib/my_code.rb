@@ -50,7 +50,7 @@ end
 def reduce_to_all_true(source_array)
   binding.pry
   index = 0
-  while index < source_array do
+  while index < source_array.length do
     if source_array[index] == 'false'
       return false
     end
@@ -62,7 +62,7 @@ end
 
 def reduce_to_any_true(source_array)
   index = 0
-  while index < source_array do
+  while index < source_array.length do
     if source_array[index] == 'true'
       return true
     end
