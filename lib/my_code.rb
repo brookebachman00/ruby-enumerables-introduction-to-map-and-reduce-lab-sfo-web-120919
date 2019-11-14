@@ -28,7 +28,7 @@ end
 def map_to_square(source_array)
   index = 0
   new_array = []
-  while index < source_array.length 
+  while index < source_array.length
     new_array.push(source_array[index] ** 2)
     index += 1
   end
@@ -49,7 +49,7 @@ end
 
 def reduce_to_all_true(source_array)
   index = 0
-  while index < source_array.length
+  while index < source_array.length do
     if source_array[index] == 'false'
       return false
     end
@@ -62,7 +62,7 @@ end
 def reduce_to_any_true(source_array)
   index = 0
   while index < source_array.length
-    if source_array[index] == 'true'
+    if source_array[index] == 'true' do
       return true
     end
     index += 1
