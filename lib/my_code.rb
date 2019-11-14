@@ -16,7 +16,12 @@ end
 
 # My Code here....
 def reduce_to_total(source_array, starting_point)
-  starting_point.reduce {|i|}
+  total = starting_point
+  index = 0
+  while index < source_array do
+    total += source_array[index]
+    index += 1
+  end
 end
 
 def reduce_to_all_true(source_array)
