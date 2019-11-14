@@ -3,7 +3,13 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  source_array.map {|i|}
+  index = 0
+  new_array = []
+  while index < source_array do
+    new_array.push(source_array[index] * -1)
+    index += 1
+  end
+  return new_array
 end
 
 def map_to_double(source_array)
