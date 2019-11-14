@@ -1,3 +1,5 @@
+require 'pry'
+
 def map_to_negativize(source_array)
   source_array.map {|i| i* -1}
 end
@@ -54,6 +56,7 @@ def reduce_to_all_true(source_array)
     index += 1
   end
   return true
+  binding.pry
 end
 
 def reduce_to_any_true(source_array)
